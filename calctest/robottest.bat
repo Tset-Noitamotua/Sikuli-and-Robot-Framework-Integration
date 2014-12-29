@@ -1,8 +1,9 @@
 @echo off
 
-set sikuli_jar=C:\Program Files\Sikuli X\sikuli-script.jar
+set sikuli_jar=C:\sikulix\sikulixapi.jar
+set robotframework_jar=C:\RobotFramework\robotframework-2.8.6.jar
 
-java -cp "robotframework-2.5.5.jar;%sikuli_jar%" ^
+java -cp "%robotframework_jar%;%sikuli_jar%" ^
      -Dpython.path="%sikuli_jar%/Lib" ^
      org.robotframework.RobotFramework ^
      --pythonpath=CalcLib ^

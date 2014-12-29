@@ -2,7 +2,9 @@ import logging
 import datetime
 import shutil
 import common
-from sikuli.Sikuli import *
+from sikuli import *
+
+
 
 # hack to properly handle WARNING log level
 logging.addLevelName(logging.WARNING, 'WARN')
@@ -16,7 +18,7 @@ class RobotHandler(logging.Handler):
 
     def emit(self, record):
         print self.format(record)
-    
+
     def format(self, record):
         if not self.formatter:
             # add default formatter
@@ -33,16 +35,16 @@ class RobotLogger(logging.Logger):
 	def _get_unique_name(self, prefix="", suffix=""):
 		now = datetime.datetime.now()
 		return prefix + now.strftime('%Y-%m-%d_%H-%M-%S') + suffix
-	
+
 	def screenshot(self, msg="", folder="results/screenshots/", region=(0,0,1440,900)):
 		name = self._get_unique_name(suffix=".png")
 		img_src = capture(*region)
 		shutil.copy(img_src, folder + name)
-		self.html_img(msg, folder + name)				
-	
+		self.html_img(msg, folder + name)
+
 	def passed(self, msg, *args, **kwargs):
 		self.info('PASS: ' + msg, *args, **kwargs)
-		
+
 		if self.isEnabledFor(logging.DEBUG) and len(getLastFoundImages()) != 0:
 			# source image
 			self.html_img("Source Image", common.cfgImageLibrary + '/' + getLastFoundImage())
@@ -52,7 +54,7 @@ class RobotLogger(logging.Logger):
 			self.screenshot(msg="Best Matches", folder='results/matches/', region=region)
 			# score of match
 			self.info("Matched with score: %s" % last_match.getScore())
-		
+
 	def failed(self, msg, *args, **kwargs):
 		if self.isEnabledFor(logging.DEBUG):
 			if len(getLastFoundImages()) != 0:
@@ -61,10 +63,10 @@ class RobotLogger(logging.Logger):
 			# screenshot
 			self.screenshot()
 		raise common.VerificationFailed(msg)
-	
+
 	def html(self, msg, *args, **kwargs):
 		self.log(HTML, msg, *args, **kwargs)
-		
+
 	def html_img(self, msg, image):
 		self.html('%s <img src="../%s" />' % (msg, image))
 

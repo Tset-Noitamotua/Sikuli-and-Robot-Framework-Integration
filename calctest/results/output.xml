@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.7.dev20141007 (Jython 2.5.3 on java1.8.0_05)" generated="20141229 23:13:44.175">
+<suite source="C:\_GITHUB\Sikuli-and-Robot-Framework-Integration\calctest\robot_suite\verify_operations.txt" name="Verify Operations" id="s1">
+<test name="Verify that 2 + 2 = 4" id="s1-t1">
+<kw type="kw" name="calc.Calculator.Start App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20141229 23:13:47.004">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20141229 23:13:50.014">[log] App.open calc.exe(6116)</msg>
+<msg level="TRACE" timestamp="20141229 23:13:50.019">Return: None</msg>
+<status endtime="20141229 23:13:50.015" starttime="20141229 23:13:47.001" status="PASS"></status>
+</kw>
+<kw type="kw" name="calc.Calculator.Verify App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20141229 23:13:50.025">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20141229 23:13:50.997">PASS: Calculator window appeared</msg>
+<msg level="INFO" html="yes" timestamp="20141229 23:13:50.997">Source Image &lt;img src="../images/CalcApp.png" /&gt;</msg>
+<msg level="INFO" html="yes" timestamp="20141229 23:13:50.997">Best Matches &lt;img src="../results/matches/2014-12-29_23-13-50.png" /&gt;</msg>
+<msg level="INFO" timestamp="20141229 23:13:50.997">Matched with score: 0.975853741169</msg>
+<msg level="TRACE" timestamp="20141229 23:13:51.003">Return: None</msg>
+<status endtime="20141229 23:13:51.002" starttime="20141229 23:13:50.023" status="PASS"></status>
+</kw>
+<kw type="kw" name="calc.Calculator.Perform Action">
+<doc></doc>
+<arguments>
+<arg>2</arg>
+<arg>+</arg>
+<arg>2</arg>
+</arguments>
+<msg level="TRACE" timestamp="20141229 23:13:51.011">Arguments: [ u'2' | u'+' | u'2' ]</msg>
+<msg level="INFO" timestamp="20141229 23:13:54.123">[log] CLICK on L(881,438)@S(0)[0,0 1280x800]
+[log] CLICK on L(842,534)@S(0)[0,0 1280x800]
+[log] CLICK on L(920,566)@S(0)[0,0 1280x800]
+[log] CLICK on L(842,534)@S(0)[0,0 1280x800]
+[log] CLICK on L(959,550)@S(0)[0,0 1280x800]</msg>
+<msg level="TRACE" timestamp="20141229 23:13:54.127">Return: None</msg>
+<status endtime="20141229 23:13:54.126" starttime="20141229 23:13:51.007" status="PASS"></status>
+</kw>
+<kw type="kw" name="calc.Calculator.Verify Result">
+<doc></doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg level="TRACE" timestamp="20141229 23:13:54.133">Arguments: [ u'4' ]</msg>
+<msg level="INFO" timestamp="20141229 23:13:54.357">PASS: Action performed correctly and result equals 4
+[log] ( Strg )  TYPE "c"</msg>
+<msg level="TRACE" timestamp="20141229 23:13:54.359">Return: None</msg>
+<status endtime="20141229 23:13:54.358" starttime="20141229 23:13:54.130" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20141229 23:13:54.362" starttime="20141229 23:13:46.990" status="PASS"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status endtime="20141229 23:13:54.372" starttime="20141229 23:13:44.183" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" name="Verify Operations" id="s1">Verify Operations</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
