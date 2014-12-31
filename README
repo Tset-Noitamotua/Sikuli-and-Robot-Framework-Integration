@@ -8,7 +8,7 @@ on blog.mykhailo.com. (see readme backup below)
 The files were updated in this repo to make them work with
 Sikulix 1.1.0 (nightly build 2014-11-09) on Windows 8.1.
 
-Configuration setup:
+System Configuration Setup:
 - Windows 8.1 (German)
 - Java version 1.8.0_05 (build 1.8.0_05-b13)
 - Sikulix 1.1.0 (nightly build 2014-11-09)
