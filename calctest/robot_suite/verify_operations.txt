@@ -8,14 +8,14 @@ Verify that 2 + 2 = 4
 	Perform Action  2  +  2
 	Verify Result  4
 
-#Verify that 2 + 2 = 5
-#	Start App
-#	Verify App
-#	Perform Action  2  +  2
-#	Verify Result  5
-#
-#Click on non-existent button "Exp"
-#	Start App
-#	Verify App
-#	Perform Action  2  exp  2
-#	Verify Result  2
+Verify that 2 + 2 = 5
+	Start App
+	Verify App
+	Perform Action  2  +  2
+	Verify Result  5
+
+Click on non-existent button "Exp"
+	Start App
+	Verify App
+	Perform Action  2  exp  2
+	Verify Result  2
