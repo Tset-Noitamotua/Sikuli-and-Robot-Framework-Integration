@@ -1,28 +1,31 @@
-=================================================
-Sikuli and Robot Framework Integration Project II
-=================================================
+TODO: Still searching for a way to get real code assistance for that in Vim / gVim. If you have an idea - please share!!!
+
+==============================================
+Sikuli and Robot Framework Integration Project
+==============================================
 
 Originally this were the source files for Mykhailo´s blogpost
 on blog.mykhailo.com. (see readme backup below)
 
 The files were updated in this repo to make them work with
-Sikulix 1.1.0 (nightly build 2014-11-09) on Windows 8.1.
+SikuliX 1.1.0 (nightly build 2015-01-16) on Windows 8.1.
 
 System Configuration Setup:
-- Windows 8.1 (German)
+- Windows 8.1 (German - but I plan to change that to English soon)
 - Java version 1.8.0_05 (build 1.8.0_05-b13)
-- Sikulix 1.1.0 (nightly build 2014-11-09)
+- SikuliX 1.1.0 (nightly build 2015-01-16)
 - Robot Framework 2.8.6
 - Python 2.7.3
-- Jython 2.5.3
+- Jython 2.7 beta3 (Jython 2.7b3)
 
-Optional:
+Optional (for code assistance purpose):
 IntelliJ IDEA 14.0.2 with Python plugin and
 Jython as project SDK + sikulixapi.jar and
-Lib folder from Sikulix installation (C:\sikulix\Lib)
-as external libraries for the project to have
-syntax highlighting and code completion for both
-Sikulix and Python
+Lib folder from Sikulix installation (C:\sikulix\Lib
+or C:\sikulix\sikulixapi.jar\Lib) as external libraries
+for the project to have syntax highlighting and
+code completion for both SikuliX and Python.
+TODO: Still searching for a way to get real code assistance for that in Vim / gVim. If you have an idea - please share!!!
 
 Cheers
 Tset Noitamotua
