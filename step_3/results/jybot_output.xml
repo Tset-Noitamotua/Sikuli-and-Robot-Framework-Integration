@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.7 (Jython 2.7b3 on java1.8.0_05)" generated="20150122 16:29:10.633">
+<suite source="C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\robot_suite\verify_operations.txt" name="Verify Operations" id="s1">
+<test name="Verify that 2 + 2 = 4" id="s1-t1">
+<kw type="kw" name="Calculator.Start App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:19.930">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:20.932">[log] App.focus Rechner(0) #0</msg>
+<msg level="TRACE" timestamp="20150122 16:29:20.935">Return: None</msg>
+<status endtime="20150122 16:29:20.934" starttime="20150122 16:29:19.929" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Verify App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:20.940">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:21.870">PASS: Calculator window appeared</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:21.870">Source Image &lt;img src="../images/CalcApp.png" /&gt;</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:21.870">Best Matches &lt;img src="../results/matches/2015-01-22_16-29-21.png" /&gt;</msg>
+<msg level="INFO" timestamp="20150122 16:29:21.870">Matched with score: 0.819017112255</msg>
+<msg level="TRACE" timestamp="20150122 16:29:21.873">Return: None</msg>
+<status endtime="20150122 16:29:21.873" starttime="20150122 16:29:20.939" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Perform Action">
+<doc></doc>
+<arguments>
+<arg>2</arg>
+<arg>+</arg>
+<arg>2</arg>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:21.877">Arguments: [ u'2' | u'+' | u'2' ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:25.720">[log] CLICK on L(220,521)@S(0)[0,0 1680x1050]
+[log] CLICK on L(181,617)@S(0)[0,0 1680x1050]
+[log] CLICK on L(259,649)@S(0)[0,0 1680x1050]
+[log] CLICK on L(181,617)@S(0)[0,0 1680x1050]
+[log] CLICK on L(298,633)@S(0)[0,0 1680x1050]</msg>
+<msg level="TRACE" timestamp="20150122 16:29:25.725">Return: None</msg>
+<status endtime="20150122 16:29:25.724" starttime="20150122 16:29:21.875" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Verify Result">
+<doc></doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:25.731">Arguments: [ u'4' ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:25.800">PASS: Action performed correctly and result equals 4
+[log] ( Strg )  TYPE "c"</msg>
+<msg level="TRACE" timestamp="20150122 16:29:25.802">Return: None</msg>
+<status endtime="20150122 16:29:25.802" starttime="20150122 16:29:25.729" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150122 16:29:25.805" starttime="20150122 16:29:19.925" status="PASS"></status>
+</test>
+<test name="Verify that 2 + 2 = 5" id="s1-t2">
+<kw type="kw" name="Calculator.Start App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:25.818">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:26.821">[log] App.focus Rechner(0) #0</msg>
+<msg level="TRACE" timestamp="20150122 16:29:26.824">Return: None</msg>
+<status endtime="20150122 16:29:26.823" starttime="20150122 16:29:25.817" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Verify App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:26.828">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:27.737">PASS: Calculator window appeared</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:27.737">Source Image &lt;img src="../images/CalcApp.png" /&gt;</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:27.737">Best Matches &lt;img src="../results/matches/2015-01-22_16-29-27.png" /&gt;</msg>
+<msg level="INFO" timestamp="20150122 16:29:27.737">Matched with score: 0.819017112255</msg>
+<msg level="TRACE" timestamp="20150122 16:29:27.740">Return: None</msg>
+<status endtime="20150122 16:29:27.740" starttime="20150122 16:29:26.827" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Perform Action">
+<doc></doc>
+<arguments>
+<arg>2</arg>
+<arg>+</arg>
+<arg>2</arg>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:27.744">Arguments: [ u'2' | u'+' | u'2' ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:31.522">[log] CLICK on L(220,521)@S(0)[0,0 1680x1050]
+[log] CLICK on L(181,617)@S(0)[0,0 1680x1050]
+[log] CLICK on L(259,649)@S(0)[0,0 1680x1050]
+[log] CLICK on L(181,617)@S(0)[0,0 1680x1050]
+[log] CLICK on L(298,633)@S(0)[0,0 1680x1050]</msg>
+<msg level="TRACE" timestamp="20150122 16:29:31.526">Return: None</msg>
+<status endtime="20150122 16:29:31.525" starttime="20150122 16:29:27.742" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Verify Result">
+<doc></doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:31.533">Arguments: [ u'5' ]</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:31.831">&lt;img src="../results/screenshots/2015-01-22_16-29-31.png" /&gt;
+[log] ( Strg )  TYPE "c"</msg>
+<msg level="FAIL" timestamp="20150122 16:29:31.835">VerificationFailed: Actual result '4' is not equal to expected result '5'</msg>
+<msg level="DEBUG" timestamp="20150122 16:29:31.836">Traceback (most recent call last):
+  File "C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\calc.py", line 69, in verifyResult
+    self.log.failed(
+  File "C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\logger.py", line 65, in failed
+    raise common.VerificationFailed(msg)</msg>
+<status endtime="20150122 16:29:31.837" starttime="20150122 16:29:31.530" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150122 16:29:31.838" starttime="20150122 16:29:25.809" status="FAIL">VerificationFailed: Actual result '4' is not equal to expected result '5'</status>
+</test>
+<test name="Click on non-existent button &quot;Exp&quot;" id="s1-t3">
+<kw type="kw" name="Calculator.Start App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:31.914">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:32.915">[log] App.focus Rechner(0) #0</msg>
+<msg level="TRACE" timestamp="20150122 16:29:32.918">Return: None</msg>
+<status endtime="20150122 16:29:32.917" starttime="20150122 16:29:31.913" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Verify App">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:32.922">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150122 16:29:33.839">PASS: Calculator window appeared</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:33.839">Source Image &lt;img src="../images/CalcApp.png" /&gt;</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:33.839">Best Matches &lt;img src="../results/matches/2015-01-22_16-29-33.png" /&gt;</msg>
+<msg level="INFO" timestamp="20150122 16:29:33.839">Matched with score: 0.819017112255</msg>
+<msg level="TRACE" timestamp="20150122 16:29:33.842">Return: None</msg>
+<status endtime="20150122 16:29:33.842" starttime="20150122 16:29:32.920" status="PASS"></status>
+</kw>
+<kw type="kw" name="Calculator.Perform Action">
+<doc></doc>
+<arguments>
+<arg>2</arg>
+<arg>exp</arg>
+<arg>2</arg>
+</arguments>
+<msg level="TRACE" timestamp="20150122 16:29:33.846">Arguments: [ u'2' | u'exp' | u'2' ]</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:39.186">Find Failed &lt;img src="../images/btnExp.png" /&gt;</msg>
+<msg level="INFO" html="yes" timestamp="20150122 16:29:39.186">Region &lt;img src="../results/screenshots/2015-01-22_16-29-39.png" /&gt;
+[log] CLICK on L(220,521)@S(0)[0,0 1680x1050]
+[log] CLICK on L(181,617)@S(0)[0,0 1680x1050]</msg>
+<msg level="FAIL" timestamp="20150122 16:29:39.200">FindFailed: can not find btnExp.png in R[106,360 228x323]@S(0)</msg>
+<msg level="DEBUG" timestamp="20150122 16:29:39.201">FindFailed: 
+  Line 2106, in file Region.java
+	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2106)
+	at org.sikuli.script.Region.handleFindFailed(Region.java:2051)
+	at org.sikuli.script.Region.wait(Region.java:2249)
+	at sikuli.Region$py.wait$4(C:\SikuliX_110\sikulixapi.jar\Lib\sikuli\Region.py:57)
+	at sikuli.Region$py.call_function(C:\SikuliX_110\sikulixapi.jar\Lib\sikuli\Region.py)
+	at org.sikuli.script.Region.find(Region.java:2122)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:2722)
+	at org.sikuli.script.Region.click(Region.java:3186)
+	at sikuliwrapper$py.click$4(C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\sikuliwrapper.py:36)
+	at sikuliwrapper$py.call_function(C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\sikuliwrapper.py)
+	at calc$py.performAction$5(C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\calc.py:59)
+	at calc$py.call_function(C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_3\calc.sikuli\calc.py)
+	at robot.model.testcase$py.visit$7(C:\jython2.7b3\Lib\site-packages\robot\model\testcase.py:64)
+	at robot.model.testcase$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\model\testcase.py)
+	at robot.model.itemlist$py.visit$10(C:\jython2.7b3\Lib\site-packages\robot\model\itemlist.py:58)
+	at robot.model.itemlist$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\model\itemlist.py)
+	at robot.model.visitor$py.visit_suite$2(C:\jython2.7b3\Lib\site-packages\robot\model\visitor.py:22)
+	at robot.model.visitor$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\model\visitor.py)
+	at robot.model.testsuite$py.visit$19(C:\jython2.7b3\Lib\site-packages\robot\model\testsuite.py:152)
+	at robot.model.testsuite$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\model\testsuite.py)
+	at robot.utils.application$py._execute$11(C:\jython2.7b3\Lib\site-packages\robot\utils\application.py:98)
+	at robot.utils.application$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\utils\application.py)
+	at robot.utils.application$py.execute_cli$5(C:\jython2.7b3\Lib\site-packages\robot\utils\application.py:45)
+	at robot.utils.application$py.call_function(C:\jython2.7b3\Lib\site-packages\robot\utils\application.py)
+	at runpy$py._run_code$9(C:\jython2.7b3\Lib\runpy.py:73)
+	at runpy$py.call_function(C:\jython2.7b3\Lib\runpy.py)
+	at runpy$py._run_module_code$10(C:\jython2.7b3\Lib\runpy.py:85)
+	at runpy$py.call_function(C:\jython2.7b3\Lib\runpy.py)
+	at runpy$py.run_module$15(C:\jython2.7b3\Lib\runpy.py:179)
+	at runpy$py.call_function(C:\jython2.7b3\Lib\runpy.py)</msg>
+<status endtime="20150122 16:29:39.210" starttime="20150122 16:29:33.844" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150122 16:29:39.214" starttime="20150122 16:29:31.908" status="FAIL">FindFailed: can not find btnExp.png in R[106,360 228x323]@S(0)</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status endtime="20150122 16:29:39.222" starttime="20150122 16:29:10.636" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2">Critical Tests</stat>
+<stat pass="1" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="2" name="Verify Operations" id="s1">Verify Operations</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

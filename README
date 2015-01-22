@@ -1,31 +1,40 @@
-TODO: Still searching for a way to get real code assistance for that in Vim / gVim. If you have an idea - please share!!!
+HELP PLEASE:    Still searching for a way to get code assistance for Jython in Vim / gVim.
+                e.g. code completion, syntax highlighting and analysis etc.
+                If you have an idea - please share!!!
+
+TODO: Documentation
 
 ==============================================
 Sikuli and Robot Framework Integration Project
 ==============================================
+
+NOTE: This is a work in progress! Some things might not work as intended out of the box.
+Use this at your on risk!
 
 Originally this were the source files for Mykhailo´s blogpost
 on blog.mykhailo.com. (see readme backup below)
 
 The files were updated in this repo to make them work with
 SikuliX 1.1.0 (nightly build 2015-01-16) on Windows 8.1.
+(Actually last update was done on Windows 7! And holy shit!!
+It works on Win 7 without having to change the screenshots!
+But I still have to run tests on Win 8)
 
 System Configuration Setup:
 - Windows 8.1 (German - but I plan to change that to English soon)
 - Java version 1.8.0_05 (build 1.8.0_05-b13)
 - SikuliX 1.1.0 (nightly build 2015-01-16)
-- Robot Framework 2.8.6
+- Robot Framework 2.8.7
 - Python 2.7.3
 - Jython 2.7 beta3 (Jython 2.7b3)
 
 Optional (for code assistance purpose):
 IntelliJ IDEA 14.0.2 with Python plugin and
 Jython as project SDK + sikulixapi.jar and
-Lib folder from Sikulix installation (C:\sikulix\Lib
-or C:\sikulix\sikulixapi.jar\Lib) as external libraries
+Lib folder from Sikulix installation (~your_path_to_sikulix~\Lib
+or ~your_path_to_sikulix~\sikulixapi.jar\Lib) as external libraries
 for the project to have syntax highlighting and
 code completion for both SikuliX and Python.
-TODO: Still searching for a way to get real code assistance for that in Vim / gVim. If you have an idea - please share!!!
 
 Cheers
 Tset Noitamotua
