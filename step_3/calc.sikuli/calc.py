@@ -2,14 +2,9 @@ from __future__ import with_statement
 
 from org.sikuli.script.Region import find
 from org.sikuli.script.Region import wait
-# from org.CalcLib.script.Screen import exists
 from org.sikuli.script.Match import getLastMatch
 
-# import common
 from sikuliwrapper import *
-# from CalcLib import *
-# from logger import *
-# from CalcLib.Sikuli import Region as SikuliRegion
 
 # add custom image library
 addImagePath(common.cfgImageLibrary)

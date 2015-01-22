@@ -10,3 +10,8 @@
 .idea/libraries/Lib.xml
 .idea/encodings.xml
 .idea/copyright/profiles_settings.xml
+*.png
+*.class
+*.html
+*.html
+*.xml
