@@ -1,7 +1,6 @@
-.idea/*
+.idea/
 *.png
 *.class
-*.html
 *.html
 *.xml
 *.iml
