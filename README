@@ -1,28 +1,53 @@
-HELP PLEASE:    Still searching for a way to get code assistance for Jython in Vim / gVim.
-                e.g. code completion, syntax highlighting and analysis etc.
-                If you have an idea - please share!!!
+HELP PLEASE:
+Still searching for a way to get code assistance for Jython
+in Vim / gVim e.g. code completion, syntax highlighting and
+analysis etc. If you have an idea - please share!!!
 
-TODO: Documentation
+You may contact me here: wagner.wladislaw@gmail.com
+or leave a comment or an answer on stackoverflow:
+http://stackoverflow.com/questions/27924485/is-there-any-way-to-get-jython-support-in-vim-gvim
+
+
 
 ==============================================
 Sikuli and Robot Framework Integration Project
 ==============================================
 
-NOTE: This is a work in progress! Some things might not work as intended out of the box.
-Use this at your on risk!
+RECENT UPDATE:
+Works nice and smoothly on Windows 7 AND 8.1 (German version)
+
+NEXT STEPS:
+- Adjust to English Windows version
+- create detailed / beginner friendly documentation in the wiki
+- upload all necessary files in step_0 folder
+
+NOTE: On English Windows version you will have to make a
+new screenshot of your calculator and replace CalcApp.png in
+all three step_x folders AND in all three folders in calc.py
+you will have to replace the string "Rechner" in "Calculator"
+To da that in each calc.py seach the line calcApp = App("Rechner")
+and change it to calcApp = App("Calculator").
 
 Originally this were the source files for Mykhailo´s blogpost
 on blog.mykhailo.com. (see readme backup below)
 
 The files were updated in this repo to make them work with
 SikuliX 1.1.0 (nightly build 2015-01-16) on Windows 8.1.
-(Actually last update was done on Windows 7! And holy shit!!
-It works on Win 7 without having to change the screenshots!
-But I still have to run tests on Win 8)
+But it turns out that da shit now is working even with Window 7
+without any changes needed! That´s because Sikuli is cool!!!
+
+The hardest thing turned out was to set up everything right.
+So until the wiki is ready try to stick to this notes:
+Install all tools (s. System Config. Setup below) in 32 bit
+version (even on 64 bit Windows). Put Java, Python, Jython
+and Sikuli after installation on the PATH - means set yor
+system environment variable PATH accordingly! Here is an
+example: https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/How-To:-Change-Add-System-Environment-Variables
+Adjust paths to files and folder in the code if necessary.
 
 System Configuration Setup:
 - Windows 8.1 (German - but I plan to change that to English soon)
-- Java version 1.8.0_05 (build 1.8.0_05-b13)
+- Java version 1.8.0_05 (build 1.8.0_05-b13) can be JDK or JRE
 - SikuliX 1.1.0 (nightly build 2015-01-16)
 - Robot Framework 2.8.7
 - Python 2.7.3
