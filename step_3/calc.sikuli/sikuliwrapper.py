@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import common
 from sikuli import *
 from logger import *

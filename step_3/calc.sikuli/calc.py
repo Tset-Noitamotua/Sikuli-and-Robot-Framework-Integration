@@ -1,13 +1,12 @@
+# -*- coding: utf-8 -*-
 from __future__ import with_statement
-
-from org.sikuli.script.Region import find
-from org.sikuli.script.Region import wait
-from org.sikuli.script.Match import getLastMatch
 
 from sikuliwrapper import *
 
 # add custom image library
 addImagePath(common.cfgImageLibrary)
+
+s = Screen()
 
 class Calculator(BaseLogger):
     ROBOT_LIBRARY_SCOPE = 'TEST SUITE'
@@ -19,9 +18,9 @@ class Calculator(BaseLogger):
         calcApp = App("Rechner")
         if not calcApp.window():
             App.open("calc.exe")
-            wait(2)
+            s.wait(2)
         calcApp.focus()
-        wait(1)
+        s.wait(1)
 
     def verifyApp(self):
         # check application
@@ -32,9 +31,9 @@ class Calculator(BaseLogger):
 
     def performAction(self, *args):
         # get application region
-        find("CalcApp.png")
+        s.find("CalcApp.png")
 
-        match = getLastMatch()
+        match = s.getLastMatch()
         self.appCoordinates = (match.getX(), match.getY(), match.getW(), match.getH())
         appRegion = Region(*self.appCoordinates)
 

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.8.0_05)" generated="20150122 16:08:37.232">
-<suite source="C:\SikuliX_POC\Sikuli-and-Robot-Framework-Integration\step_2\robot_suite\verify_operations.txt" name="Verify Operations" id="s1">
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.8.0_05)" generated="20150124 22:48:57.616">
+<suite source="C:\_GITHUB\Sikuli-and-Robot-Framework-Integration\step_2\robot_suite\verify_operations.txt" name="Verify Operations" id="s1">
 <test name="Verify that 2 + 2 = 4" id="s1-t1">
 <kw type="kw" name="Calculator.Start App">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:38.132">Arguments: [  ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:41.144">[log] App.open calc.exe(6112)
-[log] App.focus Rechner(0) #0</msg>
-<msg level="TRACE" timestamp="20150122 16:08:41.148">Return: None</msg>
-<status endtime="20150122 16:08:41.145" starttime="20150122 16:08:38.131" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:48:59.728">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:00.743">[log] App.focus Rechner(0) #0</msg>
+<msg level="TRACE" timestamp="20150124 22:49:00.743">Return: None</msg>
+<status endtime="20150124 22:49:00.743" starttime="20150124 22:48:59.728" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Verify App">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:41.152">Arguments: [  ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:42.098">PASS: Calculator window appeared</msg>
-<msg level="TRACE" timestamp="20150122 16:08:42.100">Return: None</msg>
-<status endtime="20150122 16:08:42.099" starttime="20150122 16:08:41.151" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:00.743">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:01.658">PASS: Calculator window appeared</msg>
+<msg level="TRACE" timestamp="20150124 22:49:01.658">Return: None</msg>
+<status endtime="20150124 22:49:01.658" starttime="20150124 22:49:00.743" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Perform Action">
 <doc></doc>
@@ -28,51 +27,51 @@
 <arg>+</arg>
 <arg>2</arg>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:42.103">Arguments: [ u'2' | u'+' | u'2' ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:48.331">[log] CLICK on L(173,689)@S(0)[0,0 1680x1050]
-[log] CLICK on L(134,785)@S(0)[0,0 1680x1050]
-[log] CLICK on L(212,817)@S(0)[0,0 1680x1050]
-[log] CLICK on L(134,785)@S(0)[0,0 1680x1050]
-[log] CLICK on L(251,801)@S(0)[0,0 1680x1050]</msg>
-<msg level="TRACE" timestamp="20150122 16:08:48.335">Return: None</msg>
-<status endtime="20150122 16:08:48.334" starttime="20150122 16:08:42.101" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:01.674">Arguments: [ u'2' | u'+' | u'2' ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:07.091">[log] CLICK on L(258,324)@S(0)[0,0 1280x800]
+[log] CLICK on L(219,420)@S(0)[0,0 1280x800]
+[log] CLICK on L(297,452)@S(0)[0,0 1280x800]
+[log] CLICK on L(219,420)@S(0)[0,0 1280x800]
+[log] CLICK on L(336,436)@S(0)[0,0 1280x800]</msg>
+<msg level="TRACE" timestamp="20150124 22:49:07.091">Return: None</msg>
+<status endtime="20150124 22:49:07.091" starttime="20150124 22:49:01.674" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Verify Result">
 <doc></doc>
 <arguments>
 <arg>4</arg>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:48.338">Arguments: [ u'4' ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:48.476">4
+<msg level="TRACE" timestamp="20150124 22:49:07.107">Arguments: [ u'4' ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:07.326">4
 4
 PASS: Action performed correctly and result equals 4
 [log] ( Strg )  TYPE "c"</msg>
-<msg level="TRACE" timestamp="20150122 16:08:48.476">Return: None</msg>
-<status endtime="20150122 16:08:48.476" starttime="20150122 16:08:48.337" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:07.326">Return: None</msg>
+<status endtime="20150124 22:49:07.326" starttime="20150124 22:49:07.091" status="PASS"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20150122 16:08:48.477" starttime="20150122 16:08:38.128" status="PASS"></status>
+<status critical="yes" endtime="20150124 22:49:07.326" starttime="20150124 22:48:59.728" status="PASS"></status>
 </test>
 <test name="Verify that 2 + 2 = 5" id="s1-t2">
 <kw type="kw" name="Calculator.Start App">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:48.483">Arguments: [  ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:49.485">[log] App.focus Rechner(0) #0</msg>
-<msg level="TRACE" timestamp="20150122 16:08:49.487">Return: None</msg>
-<status endtime="20150122 16:08:49.486" starttime="20150122 16:08:48.483" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:07.341">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:08.357">[log] App.focus Rechner(0) #0</msg>
+<msg level="TRACE" timestamp="20150124 22:49:08.357">Return: None</msg>
+<status endtime="20150124 22:49:08.357" starttime="20150124 22:49:07.341" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Verify App">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:49.490">Arguments: [  ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:50.391">PASS: Calculator window appeared</msg>
-<msg level="TRACE" timestamp="20150122 16:08:50.392">Return: None</msg>
-<status endtime="20150122 16:08:50.391" starttime="20150122 16:08:49.490" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:08.357">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:08.513">PASS: Calculator window appeared</msg>
+<msg level="TRACE" timestamp="20150124 22:49:08.513">Return: None</msg>
+<status endtime="20150124 22:49:08.513" starttime="20150124 22:49:08.357" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Perform Action">
 <doc></doc>
@@ -81,37 +80,37 @@ PASS: Action performed correctly and result equals 4
 <arg>+</arg>
 <arg>2</arg>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:50.394">Arguments: [ u'2' | u'+' | u'2' ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:55.678">[log] CLICK on L(173,689)@S(0)[0,0 1680x1050]
-[log] CLICK on L(134,785)@S(0)[0,0 1680x1050]
-[log] CLICK on L(212,817)@S(0)[0,0 1680x1050]
-[log] CLICK on L(134,785)@S(0)[0,0 1680x1050]
-[log] CLICK on L(251,801)@S(0)[0,0 1680x1050]</msg>
-<msg level="TRACE" timestamp="20150122 16:08:55.681">Return: None</msg>
-<status endtime="20150122 16:08:55.680" starttime="20150122 16:08:50.393" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:08.513">Arguments: [ u'2' | u'+' | u'2' ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:11.460">[log] CLICK on L(258,324)@S(0)[0,0 1280x800]
+[log] CLICK on L(219,420)@S(0)[0,0 1280x800]
+[log] CLICK on L(297,452)@S(0)[0,0 1280x800]
+[log] CLICK on L(219,420)@S(0)[0,0 1280x800]
+[log] CLICK on L(336,436)@S(0)[0,0 1280x800]</msg>
+<msg level="TRACE" timestamp="20150124 22:49:11.460">Return: None</msg>
+<status endtime="20150124 22:49:11.460" starttime="20150124 22:49:08.513" status="PASS"></status>
 </kw>
 <kw type="kw" name="Calculator.Verify Result">
 <doc></doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg level="TRACE" timestamp="20150122 16:08:55.686">Arguments: [ u'5' ]</msg>
-<msg level="INFO" timestamp="20150122 16:08:55.753">5
+<msg level="TRACE" timestamp="20150124 22:49:11.460">Arguments: [ u'5' ]</msg>
+<msg level="INFO" timestamp="20150124 22:49:11.555">5
 4
 FAIL: Actual result '4' is not equal to expected result '5'
 [log] ( Strg )  TYPE "c"</msg>
-<msg level="TRACE" timestamp="20150122 16:08:55.754">Return: None</msg>
-<status endtime="20150122 16:08:55.754" starttime="20150122 16:08:55.684" status="PASS"></status>
+<msg level="TRACE" timestamp="20150124 22:49:11.555">Return: None</msg>
+<status endtime="20150124 22:49:11.555" starttime="20150124 22:49:11.460" status="PASS"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20150122 16:08:55.756" starttime="20150122 16:08:48.480" status="PASS"></status>
+<status critical="yes" endtime="20150124 22:49:11.555" starttime="20150124 22:49:07.341" status="PASS"></status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20150122 16:08:55.768" starttime="20150122 16:08:37.235" status="PASS"></status>
+<status endtime="20150124 22:49:11.571" starttime="20150124 22:48:57.616" status="PASS"></status>
 </suite>
 <statistics>
 <total>

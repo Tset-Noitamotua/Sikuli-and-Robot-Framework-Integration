@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Global variables, can be moved to config file
 cfgImageLibrary = "images" # image search directory
 cfgLoggingLevel = "debug" # logging level, possible values 'debug', 'info'

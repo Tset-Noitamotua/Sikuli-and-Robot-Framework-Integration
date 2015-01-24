@@ -1,18 +1,14 @@
+# -*- coding: utf-8 -*-
 from __future__ import with_statement
 
-# optional imports: the script runs correct without them from console
-# but if they are missing JntelliJ IDEA shows syntax errors / unresolved references
-# TODO: How to avoid syntax issues related to this optional imports?
-from org.sikuli.script.Region import find
-from org.sikuli.script.Region import wait
-from org.sikuli.script.Region import exists
-from org.sikuli.script.Region import click
-from org.sikuli.script.Match import getLastMatch
-
-# required import
+# IMPORTANT: python level import - don´t mix it with java level imports of Sikuli classes
+# like from org.sikuli.script import Region
+# For more details go here: https://answers.launchpad.net/sikuli/+question/261129
 from sikuli import *
 
 setBundlePath("calc.sikuli")
+
+s = Screen()
 
 class Calculator(object):
 	
@@ -23,22 +19,22 @@ class Calculator(object):
 		calcApp = App("Rechner")
 		if not calcApp.window():
 				App.open("calc.exe")
-				wait(2)
+				s.wait(2)
 		calcApp.focus()
-		wait(1)
+		s.wait(1)
 
 	def verifyApp(self):
 		# check application
-		if exists("CalcApp.png"):
+		if s.exists("CalcApp.png"):
 			print("PASS: Calculator window appeared")
 		else:
 			print("FAIL: No calculator window")
 
 	def performAction(self, *args):
 		# get application region
-		find("CalcApp.png")
+		s.find("CalcApp.png")
 		
-		match = getLastMatch()
+		match = s.getLastMatch()
 		self.appCoordinates = (match.getX(), match.getY(), match.getW(), match.getH())
 		appRegion = Region(*self.appCoordinates)
 		
@@ -49,14 +45,14 @@ class Calculator(object):
 		elif args[1] == 'exp':
 			action = 'Exp'
 		
-		with appRegion:
-			click("btnC.png")
+		# with appRegion:
+		s.click("btnC.png")
 
-			click( "btn%s.png" % (args[0],) )
-			click( "btn%s.png" % (action,) )
-			click( "btn%s.png" % (args[2],) )
+		s.click( "btn%s.png" % (args[0],) )
+		s.click( "btn%s.png" % (action,) )
+		s.click( "btn%s.png" % (args[2],) )
 
-			click("btnEqual.png")
+		s.click("btnEqual.png")
 
 	def verifyResult(self, *args):
 		expected_result = str(eval(''.join(args)))

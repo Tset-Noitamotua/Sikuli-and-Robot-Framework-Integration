@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
+
 import logging
 import datetime
 import shutil
 import common
 from sikuli import *
-
-
 
 # hack to properly handle WARNING log level
 logging.addLevelName(logging.WARNING, 'WARN')
