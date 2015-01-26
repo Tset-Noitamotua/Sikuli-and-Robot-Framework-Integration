@@ -13,15 +13,15 @@ http://stackoverflow.com/questions/27924485/is-there-any-way-to-get-jython-suppo
 Sikuli and Robot Framework Integration Project
 ==============================================
 
-RECENT UPDATE:
+**RECENT UPDATE:**
 Works nice and smoothly on Windows 7 AND 8.1 (German version)
 
-NEXT STEPS:
+**NEXT STEPS:**
 - Adjust to English Windows version
 - create detailed / beginner friendly documentation in the wiki
 - upload all necessary files in step_0 folder
 
-NOTE: On English Windows version you will have to make a
+**NOTE:** On English Windows version you will have to make a
 new screenshot of your calculator and replace CalcApp.png in
 all three step_x folders AND in all three folders in calc.py
 you will have to replace the string "Rechner" in "Calculator"
@@ -45,7 +45,7 @@ system environment variable PATH accordingly! Here is an
 example: https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/How-To:-Change-Add-System-Environment-Variables
 Adjust paths to files and folder in the code if necessary.
 
-System Configuration Setup:
+######System Configuration Setup:#####
 - Windows 8.1 (German - but I plan to change that to English soon)
 - Java version 1.8.0_05 (build 1.8.0_05-b13) can be JDK or JRE
 - SikuliX 1.1.0 (nightly build 2015-01-16)
@@ -65,8 +65,9 @@ Cheers
 Tset Noitamotua
 
 
-##### ----- BACKUP OF ORIGINAL README ----- #####
 
+
+######----- BACKUP OF ORIGINAL README ----- ######
 ================================================
 Sikuli and Robot Framework Integration Project
 ================================================
