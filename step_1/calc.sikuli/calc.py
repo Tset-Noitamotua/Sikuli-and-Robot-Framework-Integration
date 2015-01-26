@@ -31,13 +31,14 @@ from __future__ import with_statement
 #
 # /// OPTION No. III (Using jython command)
 #
-# NOTE: This works only if some environment variables are set accordingly and are on the PATH
+# NOTE: This works only if environment variables CLASSPATH and JYTHONPATH are set accordingly
+# (e.g. CLASSPATH=~your_path_to~\sikulixapi.jar and JYTHONPATH=~your_path_to~\sikulixapi.jar\Lib)
 #
 # 1. start console
 # 2. cd into ~yourpath_to\step_1\calc.sikuli
 # 3. run jython calc.py
 #
-# TODO: need to make this more generic, thus one have not to set environment variables on PATH
+# TODO: need to make this more generic, thus one have not to set environment variables
 # TODO: maybe with something like: jython -J-cp path_to\sikulixapi.jar calc.py ???
 
 
@@ -47,6 +48,15 @@ from __future__ import with_statement
 # imports like "from org.sikuli.script.Region import wait"
 # For more details go here: https://answers.launchpad.net/sikuli/+question/261129
 from sikuli import *
+# from sikuli import JEnv
+# from sikuli import Env
+# from sikuli import setBundlePath
+# from sikuli.Sikuli import App
+# from sikuli import Region
+# from sikuli import Screen
+# from sikuli import KEY_CTRL
+
+
 
 # Tell Sikuli where to look for pictures
 setBundlePath("calc.sikuli")
