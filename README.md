@@ -1,58 +1,66 @@
-**HELP PLEASE:**
-Still searching for a way to get code assistance for Jython
-in Vim / gVim e.g. code completion, syntax highlighting and
-analysis etc. If you have an idea - please share!!!
+======================================
+Sikuli and Robot Framework Integration
+======================================
 
-You may contact me here: wagner.wladislaw@gmail.com
-or leave a comment or an answer on [stackoverflow](http://stackoverflow.com/questions/27924485/is-there-any-way-to-get-jython-support-in-vim-gvim)
+**NEWS:**
 
-==============================================
-Sikuli and Robot Framework Integration Project
-==============================================
-
-**RECENT UPDATE:**
-
-Works nice and smoothly on Windows 7 AND 8.1 (German version)
+- Started building the wiki
+- Works nice and smoothly on Windows 7 AND 8.1 (German version)
 
 **NEXT STEPS:**
 
+- finish detailed / beginner friendly documentation in the wiki
 - Adjust to English Windows version
-- create detailed / beginner friendly documentation in the wiki
 - upload all necessary files in step_0 folder
 
-**NOTE:**
 
-On English Windows version you will have to make a new screenshot of your calculator and replace CalcApp.png in all three step_x folders AND in all three folders in calc.py you will have to replace the string "Rechner" with "Calculator". To do that in each calc.py search the line ```calcApp = App("Rechner")``` and change it to ```calcApp = App("Calculator")```.
 
-###Description
+## What is it all about?
 
-Originally this were the source files for Mykhailo´s great tutorial  about integration of [Sikuli](http://www.sikuli.org) with the [Robot Framework](http://www.robotframework.org) on his [block](blog.mykhailo.com). (see readme backup below)
+This is (or at least is aimed to become) a complete and beginner friendly tutorial which shows you step by step a generel concept on how to integrate SikuliX with the Robot Framework and thus let both technologies which are allready superb  benefit from each other and even farther enhance each other which creates andreamt synergies. How that? Well - on the one hand SikuliX enriches the Robot Framework with the possibility to build a GUI-testing library (for your specific application) which is completely API-independent. And the Robot Framework on the other hand brings it's generic keyword approach and it's powerful reporting capabilities to SikuliX. ... TO BE CONTINUED ...
 
-The files were updated in this repo to make them work with SikuliX 1.1.0 (nightly build 2015-01-16) on Windows 8.1. It turned out that after the update da shit is working even with Window 7 without any extra changes needed! That´s because Sikuli is so cool!!!
+- [Introduction](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Introduction)
+- [Integration Details](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Integration-Details)
 
-The hardest thing was to set up everything right. So until the [wiki](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki) is ready try to stick to this notes: Install all tools (s. System Config. Setup below) in 32 bit version (even on 64 bit Windows). Put Java, Python, Jython and Sikuli after installation on the PATH - means set your system environment variable PATH accordingly! Here is an
-example of [how to put things on the PATH](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/How-To:-Change-Add-System-Environment-Variables). Adjust paths to files and folders in the code if necessary.
 
-####System Configuration Setup:
-- Windows 8.1 (German - but I plan to change that to English soon)
+
+## All you need to know to get started in detail
+
+Follow the wiki to get detailed instructions on how to intall and configure all required components and how to use them.
+
+- [Step 0: Installation](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Step-0:-Installation)
+- [Step 1: Run SikuliX Scripts Using Command Line](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Step-1:-Run-Sikulix-Scripts-From-Command-Line)
+- [Step 2: Run SikuliX Scripts Using Robot Framework ](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Step-2:-Run-Sikulix-Scripts-From-Robot-Framework)
+- [Step 3: Enhance Robot Framework Logs & Reports With SikuliX Power](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Step-3:-Enhance-Robot-Framework-Reports-With-Sikulix-Screenshots)
+- [Summary](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Summary)
+- [References](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/References)
+
+
+
+## Quick Overview
+
+To be able to work along the three steps of this tutorial you will need ...
+
+- Windows 7 / 8.1 machine
 - Java version 1.8.0_05 (build 1.8.0_05-b13) can be JDK or JRE
-- SikuliX 1.1.0 (nightly build 2015-01-16)
-- Robot Framework 2.8.7
-- Python 2.7.3
+- SikuliX 1.1.0
 - Jython 2.7 beta3 (Jython 2.7b3)
+- Robot Framework 2.8.7
+- To configure some system environment variables
+- Python 2.7.3 **
+- IntelliJ IDEA 14.02 + Python Plugin ***
 
-Optional (for code assistance purpose):
-IntelliJ IDEA 14.0.2 with Python plugin and
-Jython as project SDK + sikulixapi.jar and
-Lib folder from Sikulix installation (~your_path_to_sikulix~\Lib
-or ~your_path_to_sikulix~\sikulixapi.jar\Lib) as external libraries
-for the project to have syntax highlighting and
-code completion for both SikuliX and Python.
+** Optional - ....
+*** Optional - for code assistance purpose
+
+HAPPY LEARNING!
 
 Cheers
 Tset Noitamotua
 
+HELP PLEASE: Still searching for a way to get code assistance for Jython in Vim / gVim e.g. code completion, syntax highlighting and analysis etc. If you have an idea - please share!!!
 
+You may contact me here: wagner.wladislaw@gmail.com or leave a comment or an answer on stackoverflow
 
 
 ######----- BACKUP OF ORIGINAL README -----
