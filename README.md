@@ -17,7 +17,7 @@ Sikuli and Robot Framework Integration
 
 ## What is it all about?
 
-This is (or at least is aimed to become) a complete and beginner friendly tutorial which shows you step by step a general concept on how to integrate SikuliX with the Robot Framework and thus let both technologies which are allready superb  benefit from each other and even farther enhance each other which creates andreamt synergies. How that? Well - on the one hand SikuliX enriches the Robot Framework with the possibility to build a GUI-testing library (for your specific application) which is completely API-independent. And the Robot Framework on the other hand brings it's generic keyword approach and it's powerful reporting capabilities to SikuliX. ... TO BE CONTINUED ...
+This is (or at least is aimed to become) a complete and beginner friendly tutorial which shows you step by step a general concept on how to integrate SikuliX with the Robot Framework and thus let both technologies - which are allready superb by themself - benefit from each other and even further enhance each other which creates undreamt synergies. How that? Well - on the one hand SikuliX enriches the Robot Framework with the possibility to build a GUI-testing library (for your specific application) which is completely API-independent. The Robot Framework on the other hand brings it's generic keyword approach and it's powerful reporting capabilities to SikuliX. ... TO BE CONTINUED ...
 
 - [Introduction](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Introduction)
 - [Integration Details](https://github.com/Tset-Noitamotua/Sikuli-and-Robot-Framework-Integration/wiki/Integration-Details)
