@@ -5,8 +5,6 @@ from sikuli import App
 from sikuli import Region
 from sikuli import addImagePath
 from sikuli import Key
-from org.sikuli.script.Key import DELETE
-from sikuli import KeyModifier
 
 s = Screen()
 addImagePath("images")
