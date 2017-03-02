@@ -58,10 +58,7 @@ HAPPY LEARNING!
 Cheers
 Tset Noitamotua
 
-HELP PLEASE: Still searching for a way to get code assistance for Jython in Vim / gVim e.g. code completion, syntax highlighting and analysis etc. If you have an idea - please share!!!
-
-You may contact me here: wagner.wladislaw@gmail.com or leave a comment or an answer on stackoverflow
-
+You may contact me here: tset.no@gmail.com
 
 ######----- BACKUP OF ORIGINAL README -----
 
